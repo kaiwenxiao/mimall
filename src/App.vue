@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import jsonp from 'jsonp'
 // import axios from 'axios'
 export default {
       name: 'App',

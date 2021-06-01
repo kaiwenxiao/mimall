@@ -23,12 +23,11 @@ export default {
             // storage.clear('a');
             // storage.clear('a', 'user');
 
-            //1.本地加载静态json文件做接口Mock
-            //public文件夹为项目根目录(localhost:8080)用/就可以了，和路由需要区分开来吧
-            this.axios.get('/mock/user/login.json').then((res) => {
-                  this.res = res;
-            });
-            
+            // 本地加载静态json文件
+            // public文件夹为项目根目录(localhost:8080)用/就可以了，和路由需要区分开来吧
+            // this.axios.get('/mock/user/login.json').then((res) => {
+            //       this.res = res;
+            // });
       }
 }
 </script>

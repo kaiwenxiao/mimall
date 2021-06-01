@@ -6,7 +6,7 @@ import router from './router'
 // import env from './env'
 
 // 对接口请求做基础设置(根据前端的跨域方式做调整)
-// axios.defaults.baseURL = '/api';
+axios.defaults.baseURL = '/api';
 axios.defaults.timeout = 8000;
 // 根据环境变量获取不同的请求地址
 // axios.defaults.baseURL = env.baseURL;

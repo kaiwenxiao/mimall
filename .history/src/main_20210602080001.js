@@ -7,10 +7,10 @@ import router from './router'
 
 const mock = true;
 if(mock){
-      // require是执行加载，import是预编译加载--[项目中的路径]
+      // require是执行加载，import是预编译加载
       require('./mock/api');
 }
-// 对接口请求做基础设置(根据前端的跨域方式做调整)--[路由的路径] 
+// 对接口请求做基础设置(根据前端的跨域方式做调整)
 axios.defaults.baseURL = '/api';
 axios.defaults.timeout = 8000;
 // 根据环境变量获取不同的请求地址

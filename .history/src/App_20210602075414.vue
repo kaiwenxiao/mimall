@@ -14,7 +14,7 @@ export default {
       },
       data() {
             return {
-                  res: {}
+                  res:{};
             }
       },
       mounted() {
@@ -25,12 +25,10 @@ export default {
 
             //1.本地加载静态json文件做接口Mock
             //public文件夹为项目根目录(localhost:8080)用/就可以了，和路由需要区分开来吧
-            // 2.集成mock api方式做接口Mock
-            // 拼接main.js里面的baseURL /api-> localhost:8080/api/user/login(这里指的是路由不是项目路径)
-            this.axios.get('/user/login').then((res) => {
+            this.axios.get('/mock/user/login.json').then((res) => {
                   this.res = res;
             });
-
+            
       }
 }
 </script>

@@ -1,4 +1,3 @@
-// 对于接口代理的配置（CROS和JSONP在env.js）
 module.exports = {
       devServer: {
             host: 'localhost',

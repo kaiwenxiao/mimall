@@ -47,16 +47,15 @@ export default {
                   }
                   .my-cart {
                         width: 110px;
-                        background-color: #ff6600;
+                        background-color: #FF6600;
                         text-align: center;
                         color: #ffffff;
-                        .icon-cart {
+                        .icon-cart{
                               display: inline-block;
                               width: 16px;
                               height: 12px;
                               margin-right: 4px;
-                              background: url("/imgs/icon-cart-checked.png")
-                                    no-repeat center;
+                              background: url('/imgs/icon-cart-checked.png') no-repeat center;
                               background-size: contain;
                         }
                   }

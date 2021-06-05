@@ -11,6 +11,7 @@ export default {
 
       },
       data() {
+
       },
       mounted() {
 
@@ -19,5 +20,5 @@ export default {
 </script>
 
 <style>
-@import "/assets/scss/reset.scss";
+@import asd
 </style>

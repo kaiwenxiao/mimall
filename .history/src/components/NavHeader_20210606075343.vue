@@ -157,10 +157,10 @@ export default {
                               }
                               a {
                                    @include bgImg(
-                                          18px,
-                                          18px,
-                                          "/imgs/icon-search.png",
-                                          55px);
+                                          55px,
+                                          55px,
+                                          "/imgs/.png",
+                                          55px
                                     margin-left: 17px;
                               }
                         }

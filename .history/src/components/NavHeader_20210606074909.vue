@@ -74,12 +74,7 @@ export default {
                         text-align: center;
                         color: #ffffff;
                         .icon-cart {
-                              @include bgImg(
-                                    16px,
-                                    12px,
-                                    "/imgs/icon-cart-checked.png"
-                              );
-                              margin-right: 4px;
+                              @include bgImg(16px,12px,'/imgs/icon-cart-checked')
                         }
                   }
             }
@@ -99,22 +94,22 @@ export default {
                               height: 55px;
                               &::before {
                                     content: "";
-                                    @include bgImg(
-                                          55px,
-                                          55px,
-                                          "/imgs/mi-logo.png",
-                                          55px
-                                    );
+                                    display: inline-block;
+                                    width: 55px;
+                                    height: 55px;
+                                    background: url("/imgs/mi-logo.png")
+                                          no-repeat center;
+                                    background-size: 55px;
                                     transition: margin 0.2s;
                               }
                               &::after {
                                     content: "";
-                                    @include bgImg(
-                                          55px,
-                                          55px,
-                                          "/imgs/mi-home.png",
-                                          55px
-                                    );
+                                    display: inline-block;
+                                    width: 55px;
+                                    height: 55px;
+                                    background: url("/imgs/mi-home.png")
+                                          no-repeat center;
+                                    background-size: 55px;
                               }
                               &:hover::before {
                                     margin-left: -55px;
@@ -155,12 +150,12 @@ export default {
                                     height: 50px;
                                     padding-left: 14px;
                               }
-                              a {
-                                   @include bgImg(
-                                          18px,
-                                          18px,
-                                          "/imgs/icon-search.png",
-                                          55px);
+                              a{
+                                    display: inline-block;
+                                    width: 18px;
+                                    height: 18px;
+                                    background: url('/imgs/icon-search.png') no-repeat center;
+                                    background-size: contain;
                                     margin-left: 17px;
                               }
                         }

@@ -160,7 +160,7 @@ export default {
                                           18px,
                                           18px,
                                           "/imgs/icon-search.png",
-                                          55px);
+                                          55px)
                                     margin-left: 17px;
                               }
                         }

@@ -156,11 +156,12 @@ export default {
                                     padding-left: 14px;
                               }
                               a {
-                                   @include bgImg(
-                                          18px,
-                                          18px,
-                                          "/imgs/icon-search.png",
-                                          55px);
+                                    display: inline-block;
+                                    width: 18px;
+                                    height: 18px;
+                                    background: url("/imgs/icon-search.png")
+                                          no-repeat center;
+                                    background-size: contain;
                                     margin-left: 17px;
                               }
                         }

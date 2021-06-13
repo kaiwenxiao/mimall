@@ -1,0 +1,17 @@
+.modal {
+      @include position(fixed);
+
+      .mask {
+            @include position(fixed);
+            background-color: $colorI;
+            opacity         : 0.5;
+      }
+      .modal-dialog{
+            @include position(absolute, 40%, 50%, 660px, auto);
+            background-color: $colorG;
+            transform:translate(-50%,-50%);
+            .modal-header{
+                  height: 60px;
+            }
+      }
+}

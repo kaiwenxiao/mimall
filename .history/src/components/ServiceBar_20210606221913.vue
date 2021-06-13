@@ -1,0 +1,54 @@
+<template>
+      <div class="service-bar">
+            <div class="container">
+                  <ul>
+                        <li><span class="icon-setting">预约维修服务</span></li>
+                        <li> <span class="icon-7day">7天无理由退货</span></li>
+                        <li> <span class="icon-15day">15天免费退换</span></li>
+                        <li><span class="icon-post">满150包邮</span></li>
+                  </ul>
+            </div>
+      </div>
+</template>
+
+<script>
+export default {
+      name: 'service-bar'
+}
+</script>
+
+<style lang="scss">
+@import "../assets/scss/mixin.scss";
+.service-bar {
+      padding: 33px 0; //内边距上下为33px 左右为0
+      color: #666666;
+      font-size: 16px;
+      li {
+            width: 24.9%;
+            text-align: center;
+            display: inline-block;
+            border-right: 1px solid #e5e5e5;
+            height: 20px;
+            span {
+                  width: 20px;
+                  height: 20px;
+                  display: inline-block;
+                  margin-right: 10px;
+                  vertical-align: middle; //使图片和文字居中
+            }
+      }
+
+      .icon-setting {
+            @include bgImg(16px, 16px, "/imgs/icon-setting.png");
+      }
+      // .icon-7day {
+      //       @include bgImg(20px, 20px, "/imgs/icon- 7day.png");
+      // }
+      // .icon-15day {
+      //       @include bgImg(20px, 20px, "/imgs/icon-15day.png");
+      // }
+      // .icon-post {
+      //       @include bgImg(20px, 20px, "/imgs/icon-post.png");
+      // }
+}
+</style>

@@ -1,0 +1,83 @@
+@import './mixin.scss';
+@import './config.scss';
+.container {
+      width       : 1226px;
+      margin-right: auto;
+      margin-left : auto;
+      position    : relative;
+}
+
+a {
+      img {
+            width : 100%;
+            height: 100%;
+      }
+}
+
+input {
+      outline   : none;
+      box-sizing: border-box;
+      font-size : 14px;
+}
+
+.fl {
+      float: left;
+}
+
+.fr {
+      float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+      content:'';
+      display:table;
+}
+
+.clearfix::after{
+      clear:both;
+}
+
+// 公共logo
+.header-logo {
+      display: inline-block;
+      width: 55px;
+      height: 55px;
+      background-color: $colorA;
+
+      a {
+            display: inline-block;
+            width: 110px;
+            height: 55px;
+
+            &:before {
+                  content: " "; //给图片留白,一定要留白占位置
+                  @include bgImg(
+                        55px,
+                        55px,
+                        "/imgs/mi-logo.png"
+                  );
+                  transition: margin 0.2s;
+            }
+
+            &:after {
+                  content: " ";
+                  @include bgImg(
+                        55px,
+                        55px,
+                        "/imgs/mi-home.png"
+                  );
+            }
+
+            //鼠标移上去的时候切换图片，前面的图片向左移动55px
+            &:hover:before {
+                  margin-left: -55px;
+                  transition: margin 0.2s; //过渡动画效果
+            }
+      }
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+      background-color: $colorA;
+      color: #fff;
+}
